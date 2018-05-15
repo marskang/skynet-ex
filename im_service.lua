@@ -18,7 +18,6 @@ local function start(id, addr)
     echo(id)
 end
 
-local function 
 
 skynet.start(function()
     print("======im service start======")

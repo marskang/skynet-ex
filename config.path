@@ -1,6 +1,6 @@
 root = "./"
-luaservice = root.."service/?.lua;"..root.."im/?.lua;"
+luaservice = root.."service/?.lua;"..root.."skynet-ex/?.lua;"
 lualoader = root .. "lualib/loader.lua"
 lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua"
 lua_cpath = root .. "luaclib/?.so"
-snax = root.."im/?.lua;"
+snax = root.."skynet-ex/?.lua;"
