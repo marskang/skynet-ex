@@ -1,14 +1,18 @@
 local skynet = require "skynet"
 local socket = require "skynet.socket"
 
+ids = {}
+
 local function echo(id)
     socket.start(id)
+    table.insert(ids, 1)
     while true do
         local str = socket.read(id)
         if str then
             print(str)
         else
             socket.close(id)
+            
             return
         end
     end
